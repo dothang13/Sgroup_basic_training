@@ -17,6 +17,9 @@ body{
     margin-top: 70px;
     /* flex-wrap: wrap; */
 }
+ul{
+    display: flexbox;
+}
 .number{ 
     color: #F26464;
     font-size: 40px;
@@ -131,6 +134,7 @@ body{
     display: inline-block;
     margin-right: 0px;
     width: 100px;
+    justify-content: space-between;
 }
 .jlogo{
     /* display: flex;
@@ -205,4 +209,10 @@ figure {
 .contentend .footer-text{
     margin-bottom: 0;
     padding-bottom: 20px;
+}
+.logi{
+    justify-content: space-between;
+    border-radius: 100%;
+    color: #F26464;
+    size: 300px;
 }
