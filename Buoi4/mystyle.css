@@ -1,0 +1,105 @@
+.container{
+    margin-left: 100px;
+    margin-top: 100px;
+    font-family: 'Raleway';
+}
+.anh1{
+    position: relative;
+    float: left;
+    margin: 10px;
+    min-width: 320px;
+    width: 480px;
+    height: 360px;
+    text-align: center;
+    cursor: pointer;
+}
+.nd1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 420px;
+    height: 300px;
+    padding: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1cm;
+    border: solid;
+}
+.title{
+    margin-top: 30px;
+    padding-top: 50px;
+    transition: transform 0.35s;
+    transform: translateY(20px);
+}
+.small1{
+    width: 420px;
+    position: absolute;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 160px;
+    opacity: 0;
+    color: white;
+}
+.anh1:hover{
+    color: orange;
+    opacity: 0.6;
+    .title{
+        transform: translateY(20px);
+    }
+    .small1{
+        opacity: 1;
+    }
+}
+.anh2{
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 320px;
+    width: 480px;
+    height: 360px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.anh2:hover{
+    scale: 0.95;
+    .small1{
+        opacity: 1;
+    }
+}
+.anh3{
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 320px;
+    width: 480px;
+    height: 360px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.small3{
+    background-color: white;
+    width: 420px;
+    position: absolute;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 160px;
+    opacity: 0;
+}
+.anh3:hover{
+    scale: 1.05;
+    .small1{
+        opacity: 1;
+    }
+}
+.title3{
+    background-color: white;
+    color: black;
+    margin-top: 30px;
+    padding-top: 50px;
+    transition: transform 0.35s;
+    width: fit-content;
+}
