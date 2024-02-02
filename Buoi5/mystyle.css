@@ -8,19 +8,23 @@ body{
     margin: 0;
     padding: 0;
 }
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border: none;
+    outline: none;
+    overflow: clip;
+}
 .container{
-    /* display: flex; */
     padding-right: 30px;
     padding-left: 30px;
     margin-right: 30px;
     margin-left: 30px;
-    margin-top: 70px;
-    /* flex-wrap: wrap; */
-}
-ul{
-    display: flexbox;
+    margin-top: 100px;
 }
 .number{ 
+    display: flex;
     color: #F26464;
     font-size: 40px;
     font-weight: bold;
@@ -39,12 +43,16 @@ ul{
 .core{
     vertical-align: top;
     display: inline-block;
-    width: 500px;
-    padding-right: 10px;
+    width: 49%;
     margin-top: 30px;
-    margin-right: 100px;
+    /* margin-right: 50px; */
 }
-
+.other{
+    vertical-align: top;
+    display: inline-block;
+    width: 50%;
+    margin-top: 30px;
+}
 .ngang{
     display: inline-block;
     margin-right: 30px;
@@ -61,28 +69,35 @@ ul{
     margin-bottom: 20px;
     padding: 15px 40px;
 }
+.anhnd{
+    display: flex;
+}
 .anh{
-    display: inline-block;
-    width: 500px;
-    padding-right: 30px;
-    margin-top: 30px;
+    display: flex;
+    width: 49%;
+    margin-right: 50px;
     position: relative;
 }
 .noidung{
+    display: flex;
     vertical-align: top;
     display: inline-block;
+    width: 50%;
     width: 500px;
     position: relative;
 }
 .greeting{
+    display: flex;
     font-family: 'Inter', sans-serif;
 }
 .overview{
+    display: flex;
     font-size: 50px;
     font-weight: 600;
     margin-top: 30px;
 }
 .career{
+    display: flex;
     font-family: 'Inter', sans-serif;
     margin-top: 30px;
 }
@@ -124,11 +139,8 @@ ul{
     z-index: 9999;
 }
 .logoleft{
-    /* display: inline-block; */
-    /* margin-left: 0px; */
+    display: flex;
     padding-left: 60px;
-    /* width: 200px; */
-    /* padding-right: 60px; */
 }
 .logoright{
     display: inline-block;
@@ -137,11 +149,9 @@ ul{
     justify-content: space-between;
 }
 .jlogo{
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-    width: 40px;
-    height: 40px;
+    display: flex;
+    width: 20px;
+    height: 20px;
     background-color: #000;
     border-radius: 4px;
     color: #FFF;
@@ -149,7 +159,6 @@ ul{
     font-weight: 600;
     text-align: center;
     margin-right: 12px;
-    margin-top: 50px;
     padding: 11px;
 }
 .expwork{
@@ -215,4 +224,28 @@ figure {
     border-radius: 100%;
     color: #F26464;
     size: 300px;
+}
+.ja{
+    display: flex;
+    font-size: 20px;
+    align-content: center;
+    flex-wrap: wrap;
+}
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+    .overview{
+        margin: 0 auto;
+    }
+    /* .ja{
+        display: none;
+    } */
+    .anh{
+        width: 100%;
+        justify-content: center;
+    }
+    .container{
+        justify-content: center;
+    }
+    .career{
+        flex-direction: column;
+    }
 }
