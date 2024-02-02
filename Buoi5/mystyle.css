@@ -193,9 +193,10 @@ img{
     margin-bottom: 40px;
 }
 .pic{
-    display: inline-block;
+    display: flex;
     width: 45%;
     max-width: 50%;
+    height: fit-content;
 }
 .chu{
     display: inline-block;
@@ -290,7 +291,11 @@ figure {
         width: 100%;
     }
     .oto.pic{
+        display: flex;
         width: 100%;
         justify-content: center;
+    }
+    img{
+        width: 100%;
     }
 }
