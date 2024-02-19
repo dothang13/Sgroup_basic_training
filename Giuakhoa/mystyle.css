@@ -76,6 +76,45 @@ body{
     justify-content: center;
     
 }
+.circletime{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 55px 50px 60px;
+    font: 16px Outfit, sans-serif;
+    justify-content: center;
+}
+.title{
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: underline;
+    color: #564DCA;
+    letter-spacing: 0.02em;
+    padding: 0;
+    margin-bottom: 18px;
+    font: 14px Outfit, sans-serif;
+}
+.aboutus{
+    display: flex;
+    background-color: white;
+    margin: 65px 0px 0px;
+    padding: 0px 100px;
+}
+.imgaboutus{
+    display: flex;
+    animation-delay: 0.2s;
+}
+.contentaboutus{
+    display: flex;
+    margin: 0px 0px 15px;
+}
+.title1{
+    display: flex;
+    flex-direction: column;
+}
+.title2{
+    font: 45px Poppins, sans-serif;
+}
 @media only screen and (min-width: 1200px){
     /* .container{
         justify-content: center;
