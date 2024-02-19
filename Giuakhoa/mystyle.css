@@ -3,13 +3,13 @@ body{
     font: 14px Outfit, sans-serif;
 }
 .container{
-    display: flex;
+    display: inline-block;
 }
 .header{
     display: flex;
     padding: 10px 20px;
     color: white;
-    width: 100%;
+    max-width: 100%;
     justify-content: space-between;
     /* z-index: 9999; */
 }
@@ -30,10 +30,108 @@ body{
 }
 .box1{
     display: flex;
-    padding: 15px 30px;
+    padding: 10px 30px;
     background-color: #00C4F4;
     width: 100px;
     border-radius: 5px;
+    flex-wrap: wrap;
     justify-content: center;
+    align-content: center;
     margin-left: 130px;
+}
+.box2{
+    display: flex;
+    padding: 0px 10px 0px 30px;
+    align-content: center;
+    flex-wrap: wrap;
+    font: 16px Outfit, sans-serif;
+}
+.box3{
+    display: flex;
+    display: none;
+    padding: 0px 30px;
+    align-content: center;
+    flex-wrap: wrap;
+    font-size: 30px;
+}
+.contenthome{
+    display: flex;
+    margin-top: 65px;
+    max-width: 100%;
+    padding: 0px 100px;
+    flex-direction: column;
+}
+.wordhome{
+    display: flex;
+    max-width: 100%;
+    color: white;
+    font: 55px Poppins, sans-serif;
+    justify-content: center;
+    margin: 0px 0px 65px;
+    text-align: center;
+}
+.imghome{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    
+}
+@media only screen and (min-width: 1200px){
+    /* .container{
+        justify-content: center;
+    }
+    .header{
+        
+    }
+    .box2{
+        display: none;
+    }
+    .fa-chevron-down:before{
+        display: none;
+    } */
+}
+@media only screen and (max-width: 1200px) and (min-width: 992px){
+    .container{
+        justify-content: center;
+    }
+    /* .header{
+        
+    } */
+    .box2{
+        display: none;
+    }
+    .fa-chevron-down:before{
+        display: none;
+    }
+}
+@media only screen and (max-width: 991px) and (min-width: 768px){
+    .box{
+        display: none;
+    }
+    .box2{
+        display: none;
+    }
+    .box3{
+        display: block;
+    }
+    .fa-chevron-down:before{
+        display: none;
+    }
+}
+@media only screen and (max-width: 767px){
+    .box{
+        display: none;
+    }
+    .box1{
+        display: none;
+    }
+    .box2{
+        display: none;
+    }
+    .box3{
+        display: block;
+    }
+    .fa-chevron-down:before{
+        display: none;
+    }
 }
