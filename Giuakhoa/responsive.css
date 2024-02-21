@@ -22,9 +22,9 @@
     .container{
         justify-content: center;
     }
-    /* .header{
-        
-    } */
+    .header{
+        justify-content: space-between;
+    }
     .box1{
         margin-left: 0px;
     }
