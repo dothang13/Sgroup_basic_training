@@ -158,7 +158,7 @@ i:hover{
 }
 .allcircle{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .title3{
     display: flex;
@@ -169,42 +169,43 @@ i:hover{
 .circle{
     display: flex;
     background-color: white;
-    display: flex;
     height: 140px;
     width: 140px;
     border: 5px solid #00C4F4;
     border-radius: 100%;
     justify-content: center;
+    flex-direction: column;
+
 }
 .circle1{
     display: flex;
     background-color: white;
-    display: flex;
     height: 140px;
     width: 140px;
     border: 5px solid #fd7e14;
     border-radius: 100%;
     justify-content: center;
+    flex-direction: column;
 }
 .circle2{
     display: flex;
     background-color: white;
-    display: flex;
     height: 140px;
     width: 140px;
     border: 5px solid #dc3545;
     border-radius: 100%;
     justify-content: center;
+    flex-direction: column;
 }
 .circle3{
     display: flex;
     background-color: white;
-    display: flex;
     height: 140px;
     width: 140px;
     border: 5px solid #198754;
     border-radius: 100%;
     justify-content: center;
+    flex-direction: column;
 }
 .number{
     display: flex;
@@ -214,6 +215,16 @@ i:hover{
     font-weight: 600;
     color: #030B15;
     font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+.word{
+    display: flex;
+    text-align: center;
+    line-height: 1;
+    font-weight: 600;
+    color: #030B15;
+    font-family: 14px Outfit;
     justify-content: center;
     align-items: center;
 }
@@ -231,7 +242,7 @@ i:hover{
     display: flex;
     background-color: white;
     margin: 65px 0px 0px;
-    padding: 0px 100px;
+    padding: 0px 200px;
 }
 .imgaboutus{
     display: flex;
@@ -244,7 +255,12 @@ i:hover{
 .title1{
     display: flex;
     flex-direction: column;
+    padding: 15px;
 }
 .title2{
     font: 45px Poppins, sans-serif;
+}
+.content1{
+    color: #727885;
+    font: 16px Outfit, sans-serif;
 }
