@@ -78,6 +78,7 @@ body{
     align-content: center;
     flex-wrap: wrap;
     cursor: pointer;
+    font-weight: bold;
 }
 .box1{
     display: flex;
@@ -89,6 +90,7 @@ body{
     justify-content: center;
     align-content: center;
     margin-left: 130px;
+    font-weight: bold;
 }
 .box2{
     display: flex;
@@ -165,6 +167,7 @@ i:hover{
     justify-content: center;
     font: 26px Outfit, sans-serif;
     margin-bottom: 30px;
+    font-weight: 700;
 }
 .circle{
     display: flex;
@@ -237,6 +240,7 @@ i:hover{
     padding: 0;
     margin-bottom: 18px;
     font: 14px Outfit, sans-serif;
+    font-weight: 800;
 }
 .aboutus{
     display: flex;
@@ -247,6 +251,7 @@ i:hover{
 .imgaboutus{
     display: flex;
     animation-delay: 0.2s;
+    margin-right: 50px;
 }
 .contentaboutus{
     display: flex;
@@ -255,7 +260,6 @@ i:hover{
 .title1{
     display: flex;
     flex-direction: column;
-    padding: 15px;
 }
 .title2{
     font: 45px Poppins, sans-serif;
@@ -263,4 +267,172 @@ i:hover{
 .content1{
     color: #727885;
     font: 16px Outfit, sans-serif;
+    margin-bottom: 20px;
+    width: 80%;
+}
+.content2{
+    font: 16px Outfit, sans-serif;
+    padding-left: 15px;
+}
+h2{
+    margin: 0px;
+}
+h1{
+    margin: 0px 0px 20px;
+}
+.box4{
+    display: flex;
+    padding: 10px 30px;
+    margin-top: 40px;
+    background-color: #564DCA;
+    color: white;
+    width: 180px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.aboutus2{
+    display: flex;
+    flex-direction: column;
+}
+.background3{
+    display: flex;
+    content: "";
+    position: absolute;
+    background-image: url(https://themedox.com/demo/bigtech-live/bigtech/assets/img/bg/choose_shape01.png);
+    background-position: center;
+    background-repeat: repeat;
+    width: 100%;
+    height: 25px;
+    z-index: 2;
+    left: 0;
+}
+.background4{
+    display: flex;
+    background-image: url(https://themedox.com/demo/bigtech-live/bigtech/assets/img/bg/choose_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    padding: 130px 0 218px;
+    padding-bottom: 0px;
+    z-index: 1;
+    left: 0;
+    width: 100%;
+}
+.cover{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.contentaboutus2{
+    display: flex;
+    color: white;
+    width: 100%;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.title4{
+    display: flex;
+    font: 42px Poppins, sans-serif;
+    color: white;
+    padding-top: 30px;
+    width: 40%;
+    flex-direction: column;
+}
+.row{
+    padding-top: 50px;
+    display: flex;
+    z-index: 3;
+    justify-content: space-between;
+    padding-left: 150px;
+    padding-right: 50px;
+    padding-bottom: 100px;
+}
+.box5{
+    display: flex;
+    z-index: 3;
+    flex-direction: column;
+}
+.word1{
+    display: flex;
+    font: 22px Poppins, sans-serif;
+    color: white;
+    padding-top: 30px;
+    width: 60%;
+    text-align: left;
+}
+.word1-2{
+    display: flex;
+    font: 22px Poppins, sans-serif;
+    color: white;
+    padding-top: 30px;
+    width: 70%;
+    text-align: left;
+}
+.word1:hover{
+    color: #00C4F4;
+}
+.word1-2:hover{
+    color: #00C4F4;
+}
+.word2{
+    display: flex;
+    font: 15px Outfit, sans-serif;
+    color: #A4B4C3;
+    padding-top: 30px;
+    width: 60%;
+    text-align: left;
+}
+.box6{
+    display: flex;
+    background: #FFFFFF;
+    box-shadow: 0px 34px 35px rgba(160, 171, 191, 0.21);
+    border-radius: 20px;
+    padding: 64px 75px 33px;
+    flex-direction: row;
+    z-index: 3;
+}
+.box6-1{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-right: 100px;
+    z-index: 3;
+}
+.content6-1{
+    display: flex;
+    flex-direction: column;
+}
+.number6-1{
+    display: flex;
+    font: 48px Poppins, sans-serif;
+    color: #030B15;
+}
+.word6-1{
+    display: flex;
+    font: 16px Outfit, sans-serif;
+    color: #646580;
+}
+.background5{
+    display: flex;
+    content: "";
+    position: absolute;
+    background-image: url(https://themedox.com/demo/bigtech-live/bigtech/assets/img/bg/choose_shape02.png);
+    background-repeat: repeat;
+    width: 100%;
+    height: 25px;
+    z-index: 0;
+    left: 0;
+}
+.background6{
+    background-color: #FFFFFF;
+    position: absolute;
+    z-index: 999;
 }
