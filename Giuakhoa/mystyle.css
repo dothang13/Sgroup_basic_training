@@ -91,6 +91,11 @@ body{
     align-content: center;
     margin-left: 130px;
     font-weight: bold;
+    cursor: pointer;
+}
+.box1:hover{
+    background-color: #564DCA;
+    transition: 0.3s;
 }
 .box2{
     display: flex;
@@ -99,8 +104,12 @@ body{
     flex-wrap: wrap;
     font: 16px Outfit, sans-serif;
 }
+i{
+    cursor: pointer;
+}
 i:hover{
-    background-color: #564DCA;
+    color: #564DCA;
+    transition: 0.3s;
 }
 .box3{
     display: flex;
@@ -317,6 +326,11 @@ h1{
     align-items: center;
     border-radius: 5px;
     font-weight: bold;
+    cursor: pointer;
+}
+.box4:hover{
+    background-color: #00C4F4;
+    transition: 0.3s;
 }
 .aboutus2{
     display: flex;
@@ -781,4 +795,51 @@ h1{
     opacity: 0.5;
     justify-content: center;
     align-items: center;
+}
+.footer{
+    display: flex;
+    padding: 70px 40px 65px;
+}
+.footerright{
+    display: flex;
+}
+.symbolhome{
+    position: absolute;
+    left: 100px;
+    bottom: 90px;
+    z-index: 100;
+}
+.boxsymbol{
+    font-size: 15px;
+    color: #081A39;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    transition: 0s;
+    border-color: #081A39;
+    margin-bottom: 15px;
+    transform: translateY(150px);
+    cursor: pointer;
+}
+.scroll{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    right: 40px;
+    bottom: 90px;
+    transform: translateY(150px);
+}
+.contentscroll{
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.515em;
+    color: #081A39;
+    transform: rotate(-90deg);
+    margin-bottom: 120px;
+    opacity: 0.4;
 }
