@@ -71,6 +71,7 @@ body{
 }
 .box:hover{
     color: #00C4F4;
+    transition: 0.3s;
 }
 .box{
     display: flex;
@@ -701,6 +702,7 @@ h1{
     left: 100px;
     border-radius: 80px;
     margin-top: 10px;
+    cursor: pointer;
     margin-bottom: 10px;
 }
 .titlefaq-1{
@@ -799,9 +801,31 @@ h1{
 .footer{
     display: flex;
     padding: 70px 40px 65px;
+    transform: translateY(1800px);
+    justify-content: space-between;
+    align-items: center;   
+}
+.footerleft{
+    display: flex;
+    font-weight: 500;
+    font: 16px Outfit, sans-serif;
+}
+.boxleft{
+    display: flex;
+    color: #030B15;
+    font: 16px Outfit, sans-serif;
+    padding-right: 60px;
+    transform: translateX(80px);
+    cursor: pointer;
+}
+.boxleft:hover{
+    color: #00C4F4;
+    transition: 0.3s;
 }
 .footerright{
     display: flex;
+    align-items: center;
+    transform: translateX(-200px)
 }
 .symbolhome{
     position: absolute;
@@ -842,4 +866,49 @@ h1{
     transform: rotate(-90deg);
     margin-bottom: 120px;
     opacity: 0.4;
+}
+.end{
+    border-top: 1px solid #F0F3F9;
+    padding: 40px 40px;
+    transform: translateY(1800px);
+    justify-content: space-between;
+}
+.cross{
+    width: 46px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #564DCA;
+    padding: 0 0;
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    margin: -60px auto 15px;
+    cursor: pointer;
+}
+.end1{
+    display: flex;
+    justify-content: space-between;
+}
+.center-1{
+    display: flex;
+    font-weight: 500;
+    font: 16px Outfit, sans-serif;
+}
+.cross:hover{
+    background-color: #00C4F4;
+    transition: 0.3s;
+}
+.boxright{
+    display: flex;
+    color: #030B15;
+    font: 16px Outfit, sans-serif;
+    padding-right: 60px;
+    cursor: pointer
+}
+.boxright:hover{
+    color: #00C4F4;
+    transition: 0.3s;
 }
