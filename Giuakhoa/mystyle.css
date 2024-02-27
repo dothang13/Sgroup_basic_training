@@ -61,6 +61,7 @@ body{
 .right{
     display: flex;
     margin-left: 0px;
+    position: relative;
 }
 .left{
     display: flex;
@@ -105,6 +106,9 @@ body{
     flex-wrap: wrap;
     font: 16px Outfit, sans-serif;
 }
+.box2:hover + .contenteng{
+        display: block;
+    }
 i{
     cursor: pointer;
 }
@@ -719,7 +723,7 @@ h1{
     margin-top: 380px;
 }
 .shape-1{
-    transform: translate(-1200px, 400px);
+    transform: translate(-1000px, 400px);
     animation-name: shape-1;
     animation-timing-function: 4s;
     animation-duration: 4s;
@@ -950,21 +954,23 @@ h1{
     transition: 0.3s;
 }
 .arround{
+    position: absolute;
     display: flex;
     flex-direction: column;
-    transform: translate(-60px, 60px);
+    transform: translate(20px, 30px);
 }
 .contenteng{
     transform: translateY(50px);
-    display: flex;
+    display: none;
     background-color: #081A39;
     flex-direction: column;
     width: 100px;
-    /* opacity: 0; */
+    border-radius: 5px;
 }
 .boxeng{
     display: flex;
     font-size: 16px;
     padding-bottom: 10px;
     padding-left: 5px;
+    cursor: pointer;
 }
