@@ -195,7 +195,7 @@ i:hover{
     background-color: white;
     height: 140px;
     width: 140px;
-    border: 5px solid #fd7e14;
+    border: 5px solid #FE9400;
     border-radius: 100%;
     justify-content: center;
     flex-direction: column;
@@ -205,7 +205,7 @@ i:hover{
     background-color: white;
     height: 140px;
     width: 140px;
-    border: 5px solid #dc3545;
+    border: 5px solid #FE4782;
     border-radius: 100%;
     justify-content: center;
     flex-direction: column;
@@ -215,7 +215,7 @@ i:hover{
     background-color: white;
     height: 140px;
     width: 140px;
-    border: 5px solid #198754;
+    border: 5px solid #12D176;
     border-radius: 100%;
     justify-content: center;
     flex-direction: column;
@@ -704,14 +704,50 @@ h1{
     margin-top: 10px;
     cursor: pointer;
     margin-bottom: 10px;
+    transition: 0.5s;
 }
 .titlefaq-1{
     font: 24px Poppins;
 }
-
-.titlefaq:active{
+.shape{
+    transform: translate(-70px, 30px);
+    height: fit-content;
+    animation: shape 10s linear 0s infinite;
+    -webkit-animation: shape 10s linear 0s infinite;
+    -moz-animation: shape 10s linear 0s infinite;
+    -o-animation: shape 10s linear 0s infinite; 
+    margin-top: 380px;
+}
+.shape-1{
+    transform: translate(-1200px, 400px);
+    animation-name: shape-1;
+    animation-timing-function: 4s;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes shape{
+    from {
+    -webkit-transform:rotate(0deg);
+    -moz-transform:rotate(0deg);
+    -o-transform:rotate(0deg);
+    }
+    to {
+    -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+    }
+}
+@keyframes shape-1{
+    from {
+        transform: translate(-1200px, 400px);
+    }
+    to {
+        transform: translate(-1160px, 400px);
+    }
+}
+.titlefaq:hover{
     border-radius: 0;
-    transition: 0.2s;
     border-bottom: #00C4F4;
     transition: forwards;
 }
@@ -856,6 +892,7 @@ h1{
     right: 40px;
     bottom: 90px;
     transform: translateY(150px);
+    z-index: 30;
 }
 .contentscroll{
     font-size: 12px;
@@ -911,4 +948,23 @@ h1{
 .boxright:hover{
     color: #00C4F4;
     transition: 0.3s;
+}
+.arround{
+    display: flex;
+    flex-direction: column;
+    transform: translate(-60px, 60px);
+}
+.contenteng{
+    transform: translateY(50px);
+    display: flex;
+    background-color: #081A39;
+    flex-direction: column;
+    width: 100px;
+    /* opacity: 0; */
+}
+.boxeng{
+    display: flex;
+    font-size: 16px;
+    padding-bottom: 10px;
+    padding-left: 5px;
 }
