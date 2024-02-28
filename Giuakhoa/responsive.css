@@ -1,29 +1,30 @@
-@media only screen and (max-width: 1700px) and (min-width: 1201px){
-    /* .container{
-        justify-content: center;
-    }
-    */
+@media only screen and (max-width: 1800px) and (min-width: 1200px){
     /* .header{
-        background-color: transparent;
+        justify-content: center;
     } */
-    /*
-    .box2{
-        display: none;
+    .container{
+        max-width: 1550px;
     }
-    .fa-chevron-down:before{
-        display: none;
-    } */
-    /* .wordhome-animation{
-        margin: 0px 200px;
-    }
-    */
 }
-@media only screen and (max-width: 1200px) and (min-width: 992px){
+@media only screen and (max-width: 1199.98px) and (min-width: 992px){
     .container{
         justify-content: center;
     }
     .header{
         justify-content: space-between;
+    }
+    .scroll{
+        display: none;
+    }
+    .symbolhome{
+        display: none;
+    }
+    .wordhome{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .fa-minus{
+        display: none;
     }
     .box1{
         margin-left: 0px;
@@ -41,7 +42,7 @@
         margin-bottom: 50px;
     }
 }
-@media only screen and (max-width: 991px) and (min-width: 768px){
+@media only screen and (max-width: 991.98px) and (min-width: 767.98px){
     .box{
         display: none;
     }
@@ -54,10 +55,28 @@
     .fa-chevron-down:before{
         display: none;
     }
+    .scroll{
+        display: none;
+    }
+    .symbolhome{
+        display: none;
+    }
+    .background1{
+        width: 200%;
+    }
+    .background3{
+        width: 200%;
+    }
+    .background4{
+        width: 200%;
+    }
 }
-@media only screen and (max-width: 767px){
+@media only screen and (min-width: 576px) and (max-width: 767px){
     .box{
         display: none;
+    }
+    .container{
+        width: none;
     }
     .box1{
         display: none;
@@ -70,5 +89,26 @@
     }
     .fa-chevron-down:before{
         display: none;
+    }
+    .background3{
+        width: 200%;
+    }
+    .background4{
+        width: 200%;
+    }
+    .scroll{
+        display: none;
+    }
+    .symbolhome{
+        display: none;
+    }
+    .background1{
+        width: 200%;
+    }
+    .background3{
+        width: 200%;
+    }
+    .background4{
+        width: 200%;
     }
 }
