@@ -137,7 +137,7 @@
     let newnum = 0;
     while (leetcode !== 0){
         newnum = (newnum * 10) + (leetcode % 10);
-        leetcode = leetcode / 10
+        leetcode = Math.floor.leetcode / 10
     }
     console.log(newnum);
     // 123
@@ -146,7 +146,7 @@
     let newnum1 = 0;
     while (leetcode1 !== 0){
         newnum1 = (newnum1 * 10) + (leetcode1 % 10);
-        leetcode1 = leetcode1 / 10
+        leetcode1 = Math.floor.leetcode1 / 10
     }
     console.log(newnum1);
     //-123
