@@ -6,13 +6,23 @@
         max-width: 1550px;
         flex-wrap: wrap;
     }
+    .overheader{
+        max-width: 100%;
+    }
+    ba
+    .header{
+        max-width: 100%;
+    }
 }
 @media only screen and (max-width: 1199.98px) and (min-width: 992px){
     .container{
         justify-content: center;
     }
+    .overheader{
+        max-width: 100%;
+    }
     .header{
-        justify-content: space-between;
+        max-width: 100%;
     }
     .scroll{
         display: none;
@@ -34,6 +44,9 @@
         display: none;
     }
     .fa-chevron-down:before{
+        display: none;
+    }
+    .fa-minus{
         display: none;
     }
     .contenthome{
@@ -93,6 +106,9 @@
     }
     .roadmap{
         margin-top: 100px;
+    }
+    .cover-13{
+        justify-content: space-between;
     }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px){
