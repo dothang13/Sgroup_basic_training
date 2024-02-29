@@ -4,6 +4,7 @@
     } */
     .container{
         max-width: 1550px;
+        flex-wrap: wrap;
     }
 }
 @media only screen and (max-width: 1199.98px) and (min-width: 992px){
@@ -43,6 +44,12 @@
     }
 }
 @media only screen and (max-width: 991.98px) and (min-width: 767.98px){
+    .container{
+        flex-wrap: wrap;
+    }
+    .overheader{
+        max-width: 100%;
+    }
     .box{
         display: none;
     }
@@ -61,14 +68,31 @@
     .symbolhome{
         display: none;
     }
-    .background1{
-        width: 200%;
+    .shape{
+        display: none;
     }
-    .background3{
-        width: 200%;
+    .aboutus{
+        padding: 0px 50px;
+    }
+    .roadmap-1{
+        padding: 0px 50px;
+    }
+    .cover{
+        margin-top: 300px;
+    }
+    .box6{
+        flex-wrap: wrap;
+        margin-bottom: 200px
+    }
+    .imgroadmap{
+        flex-wrap: wrap;
+        justify-content: center;
     }
     .background4{
-        width: 200%;
+        height: 1000px;
+    }
+    .roadmap{
+        margin-top: 100px;
     }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px){
@@ -76,7 +100,7 @@
         display: none;
     }
     .container{
-        width: none;
+        width: 200%;
     }
     .box1{
         display: none;
@@ -110,5 +134,14 @@
     }
     .background4{
         width: 200%;
+    }
+    .box6{
+        flex-direction: column;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .box3{
+        display: block;
     }
 }
