@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do Thang</title>
+    <link rel="stylesheet" href="mystyle2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div id="backgroundop" class="backgroundop"></div>
+    <div class="container">
+        <div class="title">
+            <div class="logo">
+                <img src="Ảnh/Logo.png" alt="">
+            </div>
+            <div id="plus" class="plus" onclick="newtaskscontent1()">
+                + New task
+            </div>
+        </div>
+        <div class="main">
+            <div class="todo">
+                <div style="background-color: #00A6DA; margin-left: 0;" class="box">
+                    <b>Todo</b>
+                    <div class="minibox">
+                    </div>
+                </div>
+                <div style="background-color: #00A6DA; margin-left: 0;" class="line"></div>
+            </div>
+            <div class="doing">
+                <div class="box">
+                    <b>Doing</b>
+                    <div style="background-color: #DAB700;" class="minibox">
+
+                    </div>
+                </div>
+                <div style="background-color: #DAB700;" class="line"></div>
+            </div>
+            <div class="completed">
+                <div style="background-color: #3BC057; width: 362px;" class="box">
+                    <b>Completed</b>
+                    <div style="background-color: #69CE7E;" class="minibox">
+
+                    </div>
+
+                </div>
+                <div style="background-color: #3BC057;" class="line"></div>
+            </div>
+            <div class="blocked">
+                <div style="background-color: #E74C3C; width: 362px;" class="box">
+                    <b>Blocked</b>
+                    <div style="background-color: #E74C3C;" class="minibox"></div>
+                </div>
+                <div style="background-color: #E74C3C;" class="line"></div>
+            </div>
+        </div>
+        <div id="newtaskscontent" class="newtaskscontent">
+            <div id="newtasks" class="newtasks">
+                <i class="fa-solid fa-xmark" onclick="newtaskscontent2()"></i>
+                <div class="text">Add new todo</div>
+                <input id="category" type="text" name="Category" placeholder="Category. Etc. Marketing...">
+                <input id="title" type="text" name="Title" placeholder="Title">
+                <textarea style="min-height: 100px; min-width: 450px;" id="content" type="text" name="Content" placeholder="Content"></textarea> 
+                <button onclick="submit()">Submit</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="main2.js"></script>
+</html>
