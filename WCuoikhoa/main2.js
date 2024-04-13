@@ -56,6 +56,3 @@ function onCreate() {
         location.reload(true);
     }
 }
-
-//
-
