@@ -136,7 +136,22 @@ button{
     top: 0;
     left: 0;
 }
+.todo-num{
+    transform: translateX(158px);
+}
+.doing-num{
+    transform: translateX(155px);
+}
+.completed-num{
+    transform: translateX(131px);
+}
+.blocked-num{
+    transform: translateX(138px);
+}
 body{
     overflow: hidden;
 }
-
+.blockscope{
+    display: flex;
+    margin-top: 10px;
+}

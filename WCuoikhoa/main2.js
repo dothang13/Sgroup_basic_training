@@ -1,8 +1,3 @@
-document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("logoutbutton").addEventListener("click", function() {
-        window.location.href = "index.html";
-    });
-});
 function newtaskscontent1(){
     let appear = document.getElementById('newtaskscontent');
     appear.style.display = 'block';
@@ -21,3 +16,46 @@ function submit(){
     let hidden2 = document.getElementById('backgroundop');
     hidden2.style.display = 'none';
 }
+var categoryInput = document.getElementById('category');
+var titleInput = document.getElementById('title');
+var contentInput = document.getElementById('content');
+
+var submit = document.getElementById('submit');
+submit.addEventListener('click', onCreate);
+
+function onCreate() { 
+    var todos = JSON.parse(localStorage.getItem('todos')) || [];
+    let categoryValue = categoryInput.value;
+    let titleValue = titleInput.value;
+    let contentValue = contentInput.value;
+    var check = true;
+    if (categoryValue == '') {
+        check = false;
+        categoryInput.classList.add('error');
+    }
+    else categoryInput.classList.remove('error');
+    if (titleValue == '') {
+        check = false;
+        titleInput.classList.add('error')
+    }
+    else titleInput.classList.remove('error');
+    if (contentValue == '') {
+        check = false;
+        contentInput.classList.add('error')
+    }
+    else contentInput.classList.remove('error');
+    if (check == true) {
+        todos.push({
+            category: categoryValue,
+            title: titleValue,
+            content: contentValue
+        })
+        localStorage.setItem('todos', JSON.stringify(todos));
+        newContainer.classList.remove('active')
+        render();
+        location.reload(true);
+    }
+}
+
+//
+

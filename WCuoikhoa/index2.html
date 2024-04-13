@@ -29,14 +29,18 @@
             <div class="todo">
                 <div style="background-color: #00A6DA; margin-left: 0;" class="box">
                     <b>Todo</b>
-                    <div class="minibox">
-                    </div>
+                    <p class="todo-num">0</p>
+                    <div class="minibox"></div>
                 </div>
                 <div style="background-color: #00A6DA; margin-left: 0;" class="line"></div>
+                <div class="blockscope">
+
+                </div>
             </div>
             <div class="doing">
                 <div class="box">
                     <b>Doing</b>
+                    <p class="doing-num">0</p>
                     <div style="background-color: #DAB700;" class="minibox">
 
                     </div>
@@ -46,6 +50,7 @@
             <div class="completed">
                 <div style="background-color: #3BC057; width: 362px;" class="box">
                     <b>Completed</b>
+                    <p class="completed-num">0</p>
                     <div style="background-color: #69CE7E;" class="minibox">
 
                     </div>
@@ -56,6 +61,7 @@
             <div class="blocked">
                 <div style="background-color: #E74C3C; width: 362px;" class="box">
                     <b>Blocked</b>
+                    <p class="blocked-num">0</p>
                     <div style="background-color: #E74C3C;" class="minibox"></div>
                 </div>
                 <div style="background-color: #E74C3C;" class="line"></div>
@@ -65,10 +71,10 @@
             <div id="newtasks" class="newtasks">
                 <i class="fa-solid fa-xmark" onclick="newtaskscontent2()"></i>
                 <div class="text">Add new todo</div>
-                <input id="category" type="text" name="Category" placeholder="Category. Etc. Marketing...">
-                <input id="title" type="text" name="Title" placeholder="Title">
-                <textarea style="min-height: 100px; min-width: 450px;" id="content" type="text" name="Content" placeholder="Content"></textarea> 
-                <button onclick="submit()">Submit</button>
+                    <input id="category" type="text" name="Category" placeholder="Category. Etc. Marketing...">
+                    <input id="title" type="text" name="Title" placeholder="Title">
+                    <textarea style="min-height: 100px; min-width: 450px;" id="content" type="text" name="Content" placeholder="Content"></textarea> 
+                    <button id="submit" onclick="submit()">Submit</button>
             </div>
         </div>
     </div>
