@@ -4,18 +4,20 @@ let password = document.getElementById("matkhau");
 function Login(){
     if(!username.value){
         username.style.border = "1.5px solid red";
+        username.style.backgroundColor = "rgba(255, 0, 0, 0.1)"; 
     }
 
-    if(!username.value){
-        username.style.border = "1.5px solid red";  
+    if(!password.value){
+        password.style.border = "1.5px solid red";  
+        password.style.backgroundColor = "rgba(255, 0, 0, 0.1)"; 
     }
 
     let infor = {
         "login": username.value,
-        "password": username.value
+        "password": password.value
     };
     
-    if(username.value && username.value){
+    if(username.value && password.value){
         const url = "https://recruitment-api.pyt1.stg.jmr.pl/login";
         fetch(url, {
             method: "POST",
@@ -26,23 +28,23 @@ function Login(){
         })
             .then(response => response.json())
             .then(data => {
-                if(data.message === "Hello 😉! How are you?" &&  data.status === "ok"){
+                if(data.status === "ok"){
+                    localStorage.setItem("userToken", data.userToken);
                     alert("Login successfully!")
                     window.location.replace("index2.html"); 
                 }else{
-                    if(!username.value || !password.value){
-                        return false;
-                    }else{
-                        alert("Email or passwork is not correct!");
-                        username.value = "";
-                        password.value = "";
-                        username.style.borderColor = "rgba(217, 217, 217, 1)";
-                        password.style.borderColor = "rgba(217, 217, 217, 1)";
-                    }
+                    alert("Email or password is not correct!");
+                    username.value = "";
+                    password.value = "";
+                    username.style.borderColor = "rgba(217, 217, 217, 1)";
+                    password.style.borderColor = "rgba(217, 217, 217, 1)";
+                    username.style.backgroundColor = "white"; 
+                    password.style.backgroundColor = "white"; 
                 }
             })
     }
 }
+
 
 function checkEntry(){ 
     username.onblur = function(){
